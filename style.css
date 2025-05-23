@@ -385,6 +385,7 @@ table {
 	max-height: 50px;
 	background-size: cover;
 	background-position: center;
+	border-radius: 100px;
 }
 
 .opinions {
