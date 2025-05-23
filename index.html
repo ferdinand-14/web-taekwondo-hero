@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Taekwondo Hero</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+	</head>
+	<script async src="script.js"></script>
+	<body>
+		<button
+			class="play-btn"
+			id="fixed-play-btn"
+			onclick="window.location.href='#newsletter'"
+			tabindex="100"
+			aria-label="Jugar ahora, ir a sección newsletter"
+		>
+			<i class="fa-solid fa-arrow-down"></i>
+		</button>
+		<header>
+			<span class="hidden"></span>
+			<div
+				id="side-bar-menu"
+				role="navigation"
+				aria-label="Menú lateral principal"
+			>
+				<ul>
+					<li><a href="#cover" tabindex="-1">Inicio</a></li>
+					<li><a href="#gameplay" tabindex="-1">Gameplay</a></li>
+					<li><a href="#reviews" tabindex="-1">Reseñas</a></li>
+					<li><a href="#ranking" tabindex="-1">Ranking</a></li>
+					<li><a href="#faqs" tabindex="-1">FAQs</a></li>
+					<li><a href="#newsletter" tabindex="-1">Newsletter</a></li>
+				</ul>
+			</div>
+			<nav role="navigation" aria-label="Navegación principal">
+				<div id="nav-bar">
+					<img
+						src="./img/logo/logo sin letra sin fondo (1).png"
+						alt="Logo Taekwondo Hero"
+					/>
+					<ul
+						id="nav-bar-responsive-hidden"
+						class="nav-bar-responsive-hidden"
+					>
+						<li><a href="#cover" tabindex="1">Inicio</a></li>
+						<li><a href="#gameplay" tabindex="2">Gameplay</a></li>
+						<li><a href="#reviews" tabindex="3">Reseñas</a></li>
+						<li><a href="#ranking" tabindex="4">Ranking</a></li>
+						<li><a href="#faqs" tabindex="5">FAQs</a></li>
+						<li>
+							<a href="#newsletter" tabindex="6">Newsletter</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<button
+				tabindex="1"
+				aria-label="Abrir menú"
+				class="responsiveHidden"
+			>
+				<i class="fa-solid fa-bars" aria-hidden="true"></i>
+			</button>
+			<div id="cover">
+				<span aria-hidden="true"></span>
+				<div>
+					<h1>TAEKWONDO HERO</h1>
+					<h2>COMIENZA TU CAMINO</h2>
+					<button
+						class="play-btn"
+						onclick="window.location.href='#newsletter'"
+						tabindex="8"
+						aria-label="Jugar ahora, ir a sección newsletter"
+					>
+						JUGAR AHORA
+					</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section
+				id="gameplay"
+				tabindex="0"
+				aria-labelledby="gameplay-title"
+			>
+				<h3 id="gameplay-title">GAMEPLAY</h3>
+				<ul>
+					<li><h4>🥋 Mecánica Principal</h4></li>
+					<li>
+						El jugador deberá bloquear patadas enemigas o atacar
+						(dar patadas) en el momento perfecto, pulsando la tecla
+						correcta.
+					</li>
+				</ul>
+				<table>
+					<tr>
+						<th scope="row">BLOQUE IZQUIERDA</th>
+						<td>A</td>
+					</tr>
+					<tr>
+						<th scope="row">BLOQUEO DERECHA</th>
+						<td>D</td>
+					</tr>
+					<tr>
+						<th scope="row">DAR PATADA IZQUIERDA</th>
+						<td>J</td>
+					</tr>
+					<tr>
+						<th scope="row">DAR PATADA DERECHA</th>
+						<td>L</td>
+					</tr>
+				</table>
+
+				<ul>
+					<li><h4>⚔️ Normas del juego:</h4></li>
+					<li>El jugador comienza con 3 vidas.</li>
+					<li>
+						Cada vez que no bloquee correctamente una patada
+						enemiga, perderá una vida.
+					</li>
+					<li>
+						Cada patada acertada (acción correcta en el momento
+						preciso) sumará 1 punto.
+					</li>
+					<li>
+						Cada vez que el jugador acumule 5 puntos, el juego
+						aumentará de dificultad:
+					</li>
+					<ul>
+						<li>
+							Se incrementará la velocidad de generación de
+							acciones (más patadas para bloquear o dar).
+						</li>
+						<li>
+							Se incrementará la velocidad de caída de los objetos
+							en pantalla.
+						</li>
+					</ul>
+				</ul>
+
+				<ul>
+					<li><h4>🎮 Condiciones del juego</h4></li>
+					<li>El jugador pierde si se queda sin vidas.</li>
+					<li>
+						El objetivo es conseguir la mayor puntuación posible
+						antes de perder.
+					</li>
+				</ul>
+			</section>
+			<section class="beneficios" aria-label="Beneficios del juego">
+				<p>ENTRENA TUS REFLEJOS</p>
+			</section>
+			<article id="reviews" tabindex="0" aria-labelledby="reviews-title">
+				<h3 id="reviews-title">RESEÑAS</h3>
+				<div class="personal-reviews">
+					<div>
+						<div class="pfps" aria-hidden="true"></div>
+						<div class="opinions">
+							<p>KickMaster21</p>
+							<p>
+								“¡Adictivo! Empecé por curiosidad y terminé
+								compitiendo conmigo mismo por superar mi récord.
+								¡Muy bien hecho!”
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="pfps" aria-hidden="true"></div>
+						<div class="opinions">
+							<p>ShadowBlocker</p>
+							<p>
+								"¡Me encanta cómo mezcla reflejos con precisión!
+								Es como un entrenamiento mental y físico."
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="pfps" aria-hidden="true"></div>
+						<div class="opinions">
+							<p>RapidJ</p>
+							<p>
+								"Me recordó a los buenos tiempos del Guitar
+								Hero, pero con patadas. ¡Una idea muy original!"
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="pfps" aria-hidden="true"></div>
+						<div class="opinions">
+							<p>ZenFighterX</p>
+							<p>
+								"Ideal para liberar estrés. Golpeas virtualmente
+								y mejoras tus reflejos reales."
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="pfps" aria-hidden="true"></div>
+						<div class="opinions">
+							<p>NinjaModeOn</p>
+							<p>
+								"La curva de dificultad está genial. Justo
+								cuando crees que lo dominas... ¡se vuelve más
+								rápido!"
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<section class="beneficios" aria-label="Motivación para jugar">
+				<p>SUPERA TUS LIMITES</p>
+			</section>
+			<section id="ranking" tabindex="0" aria-labelledby="ranking-title">
+				<h3 id="ranking-title">JUGADORES DE LA SEMANA</h3>
+				<table>
+					<tr>
+						<td class="ranking-pfp" aria-hidden="true"></td>
+						<td>SpinKick99</td>
+						<td>132</td>
+					</tr>
+					<tr>
+						<td class="ranking-pfp" aria-hidden="true"></td>
+						<td>PixelDojo</td>
+						<td>131</td>
+					</tr>
+					<tr>
+						<td class="ranking-pfp" aria-hidden="true"></td>
+						<td>PerfectKickz</td>
+						<td>124</td>
+					</tr>
+					<tr>
+						<td class="ranking-pfp" aria-hidden="true"></td>
+						<td>HiScoreHunter</td>
+						<td>118</td>
+					</tr>
+					<tr>
+						<td class="ranking-pfp" aria-hidden="true"></td>
+						<td>ReactFast777</td>
+						<td>117</td>
+					</tr>
+				</table>
+			</section>
+			<section class="beneficios" aria-label="Invitación a jugar">
+				<p>JUEGA, MEJORA Y DESAFIA A TUS AMIGOS</p>
+			</section>
+			<section id="faqs" tabindex="0" aria-labelledby="faqs-title">
+				<h3 id="faqs-title">PREGUNTAS FRECUENTES</h3>
+				<div id="faqs-container">
+					<div>
+						<p
+							tabindex="0"
+							aria-expanded="false"
+							aria-controls="faq1-answer"
+							role="button"
+						>
+							¿El juego es gratuito?
+						</p>
+						<p id="faq1-answer" class="hidden" aria-hidden="true">
+							¡Sí! Puedes disfrutar del juego completo gratis.
+						</p>
+					</div>
+					<div>
+						<p
+							tabindex="0"
+							aria-expanded="false"
+							aria-controls="faq2-answer"
+							role="button"
+						>
+							¿Necesito saber Taekwondo para jugar?
+						</p>
+						<p id="faq2-answer" class="hidden" aria-hidden="true">
+							¡No! Taekwondo Hero está diseñado para todos. Si
+							tienes buenos reflejos y ganas de superarte, este
+							juego es para ti.
+						</p>
+					</div>
+					<div>
+						<p
+							tabindex="0"
+							aria-expanded="false"
+							aria-controls="faq3-answer"
+							role="button"
+						>
+							¿Necesito estar conectado a internet?
+						</p>
+						<p id="faq3-answer" class="hidden" aria-hidden="true">
+							No. Puedes jugar sin conexión, ideal para jugar en
+							cualquier momento y lugar.
+						</p>
+					</div>
+					<div>
+						<p
+							tabindex="0"
+							aria-expanded="false"
+							aria-controls="faq4-answer"
+							role="button"
+						>
+							¿Es adecuado para niños o adolescentes?
+						</p>
+						<p id="faq4-answer" class="hidden" aria-hidden="true">
+							Totalmente. El juego es apto para todas las edades.
+							Muchos jóvenes lo usan como forma divertida de
+							entrenar reflejos y concentración.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="beneficios" aria-label="Llamada a la acción">
+				<p>JUEGA YA</p>
+			</section>
+		</main>
+		<footer id="newsletter" role="contentinfo">
+			<form
+				method="GET"
+				aria-label="Formulario de suscripción al newsletter"
+			>
+				<fieldset>
+					<legend>¡JUEGA AHORA!</legend>
+					<label for="usuario">Nombre de usuario</label>
+					<input
+						type="text"
+						id="usuario"
+						name="usuario"
+						title="Nombre de usuario"
+						placeholder="ejemplo123"
+						required
+						tabindex="17"
+					/>
+					<label for="nombreapellido">Nombre y apellido</label>
+					<input
+						type="text"
+						id="nombreapellido"
+						name="nombreapellido"
+						title="Nombre y apellido"
+						placeholder="Nombre Apellido"
+						required
+						tabindex="18"
+						autocomplete="name"
+					/>
+					<label for="correo">Correo</label>
+					<input
+						type="email"
+						id="correo"
+						name="correo"
+						title="Correo"
+						placeholder="ejemplo@correo.com"
+						required
+						tabindex="19"
+						autocomplete="email"
+					/>
+					<table id="checkboxs">
+						<tr>
+							<td>
+								<label for="politicas"
+									>Acepto las políticas de privacidad</label
+								>
+							</td>
+							<td>
+								<input
+									type="checkbox"
+									id="politicas"
+									name="politicas"
+									required
+									tabindex="20"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="novedades"
+									>Quiero recibir novedades y eventos de
+									Taekwondo Hero</label
+								>
+							</td>
+							<td>
+								<input
+									type="checkbox"
+									name="novedades"
+									id="novedades"
+									tabindex="21"
+								/>
+							</td>
+						</tr>
+					</table>
+					<input
+						type="submit"
+						id="enviar"
+						name="enviar"
+						value="Enviar"
+						tabindex="22"
+					/>
+				</fieldset>
+			</form>
+			<div>
+				<a
+					href="https://github.com/gjr14"
+					target="_blank"
+					tabindex="23"
+					aria-label="Enlace a GitHub de GJR14"
+				>
+					<i class="fa-brands fa-github" aria-hidden="true"></i>
+				</a>
+				<p>taekwondo.hero@gmail.com</p>
+				<p>+34 653 235 353</p>
+			</div>
+		</footer>
+	</body>
+</html>
