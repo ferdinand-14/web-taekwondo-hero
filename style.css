@@ -102,6 +102,8 @@ a {
 	border: none;
 	border-radius: 25px;
 	padding: 12px 25px;
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 
@@ -127,12 +129,25 @@ nav {
 	max-width: 700px;
 	margin: 0 auto;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	display: -webkit-box;
 
-	box-sizing: border-box;
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+
+	-webkit-box-sizing: border-box;
+
+	        box-sizing: border-box;
 	padding: 0 40px;
 }
 
@@ -145,6 +160,10 @@ nav {
 	text-decoration: none;
 	list-style: none;
 	color: var(--purewhite);
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
 
 	display: flex;
 	gap: 30px;
@@ -172,6 +191,8 @@ header > button {
 button > i {
 	font-size: 20px;
 	z-index: 99;
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 
@@ -190,15 +211,27 @@ header button:hover > i {
 	z-index: 100;
 	border-left: 1px solid var(--offwhite);
 
-	transform: translateX(100%);
-	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.767);
+	-webkit-transform: translateX(100%);
+
+	    -ms-transform: translateX(100%);
+
+	        transform: translateX(100%);
+	-webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.767);
+	        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.767);
+	-webkit-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
 	transition: all 500ms ease-in-out;
 }
 
 #side-bar-menu > ul {
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	gap: 15px;
 }
 
@@ -208,6 +241,8 @@ header button:hover > i {
 	text-decoration: none;
 	color: var(--offwhite);
 	position: relative;
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 
@@ -225,6 +260,8 @@ header button:hover > i {
 	width: 0;
 	height: 1.5px;
 	background: var(--jonquil);
+	-webkit-transition: width 300ms ease-in-out;
+	-o-transition: width 300ms ease-in-out;
 	transition: width 300ms ease-in-out;
 }
 
@@ -285,25 +322,45 @@ header > span {
 #reviews,
 #ranking,
 #faqs {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	padding: 15px;
 }
 
 #gameplay {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: start;
-	justify-content: start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: start;
 	text-align: left;
 }
 
 #gameplay > ul {
 	margin: 5px auto;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	align-items: start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: start;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: start;
 	width: 100%;
 	max-width: 700px;
 	gap: 5px;
@@ -323,12 +380,16 @@ header > span {
 }
 
 table {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 20px auto 15px auto;
 	border: 1px solid var(--purewhite);
 	border-collapse: collapse;
 	border-style: hidden;
 	font-family: Lato;
+	max-width: -webkit-max-content;
+	max-width: -moz-max-content;
 	max-width: max-content;
 }
 
@@ -360,14 +421,25 @@ table {
 
 /* ------ REVIEWS -------*/
 #reviews {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .personal-reviews {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin: 0 auto;
 	width: auto;
 	gap: 10px;
@@ -375,8 +447,13 @@ table {
 }
 
 .personal-reviews > div {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	gap: 10px;
 }
 
@@ -385,7 +462,6 @@ table {
 	max-height: 50px;
 	background-size: cover;
 	background-position: center;
-	border-radius: 100px;
 }
 
 .opinions {
@@ -421,14 +497,20 @@ table {
 
 /* PREGUNTAS FRECUENTES */
 #faqs {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	padding: 10px;
 }
 
 #faqs-container {
 	padding: 10px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	max-width: 700px;
 	width: 100%;
 
@@ -440,6 +522,8 @@ table {
 	background-color: var(--offwhite);
 	color: #001f41;
 	padding: 10px;
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 
@@ -456,14 +540,22 @@ table {
 /* ------- FORMS -------*/
 form fieldset {
 	font-family: Lato;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 50%;
 	max-width: 500px;
 	margin: 25px auto 0 auto;
 	border-radius: 15px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	padding: 15px;
 }
 
@@ -490,6 +582,10 @@ input[type="submit"] {
 	border-radius: 10px;
 	margin-left: auto;
 
+	-webkit-transition: all 300ms ease-in-out;
+
+	-o-transition: all 300ms ease-in-out;
+
 	transition: all 300ms ease-in-out;
 }
 
@@ -504,11 +600,23 @@ input[type="submit"] {
 footer > div {
 	background-color: #0f0f0f;
 	color: #ffffff;
+	text-align: center;
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
 
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	gap: 10px;
 	padding: 20px 0;
 	margin-top: 30px;
@@ -519,11 +627,15 @@ footer > div {
 footer > div > a {
 	border: none;
 	color: var(--purewhite);
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 
 footer > div > a:hover {
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 	color: var(--jonquil);
 }
 
@@ -589,6 +701,8 @@ footer > div > p {
 	}
 
 	#nav-bar-responsive-hidden {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -715,6 +829,8 @@ footer > div > p {
 	}
 
 	#nav-bar-responsive-hidden {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -763,6 +879,10 @@ footer > div > p {
 		padding: 8px 13px;
 		margin-left: auto;
 		font-size: 1rem;
+
+		-webkit-transition: all 300ms ease-in-out;
+
+		-o-transition: all 300ms ease-in-out;
 
 		transition: all 300ms ease-in-out;
 	}
